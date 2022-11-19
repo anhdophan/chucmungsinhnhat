@@ -1,0 +1,91 @@
+<html __fvdsurfcanyoninserted="1"
+      class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+    <link rel="shortcut icon" type="image/png" href="./birthdayCake.png" />
+
+    <!-- 1. Đây là phần title của website -->
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One"
+          rel="stylesheet"
+          type="text/css" />
+    
+    <div class="container">
+        <!-- 2. Dòng chữ Happy Birthday
+    Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+        <div class="balloon">
+            <div><span>H</span></div>
+            <div><span>A</span></div>
+            <div><span>P</span></div>
+            <div><span>P</span></div>
+            <div><span>Y</span></div>
+            <div><span>B</span></div>
+            <div><span>I</span></div>
+            <div><span>R</span></div>
+            <div><span>T</span></div>
+            <div><span>H</span></div>
+            <div><span>D</span></div>
+            <div><span>A</span></div>
+            <div><span>Y</span></div>
+        </div>
+        <div class="avatar">
+            <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+            <img src="./ngan.jpg" alt="" class="avatar__img" align="middle" onclick="showMessage()" />
+            <h1 onclick="showMessage()" class="avatar__title">Nguyễn Thị Kim Ngân</h1>
+
+        </div>
+        <div class="avatar2">
+            <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+            <img src="./ngan1.jpg" alt="" class="avatar__img2" align="middle" onclick="showMessage()" />          
+        </div>
+        <div class="avatar3">
+            <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+            <img src="./ngan2.jpg" alt="" class="avatar__img3" align="middle" onclick="showMessage()" />
+        </div>
+
+        <!-- 5. Phần nhạc -->
+        <audio id="player" autoplay loop>
+            <source src="./music.mp3" type="audio/mp3">
+        </audio>
+        <button class="btn-open">❤</button>
+        <div class="model hide">
+            <div class="model-inner">
+                <div class="model-header">
+                    <p>Chúc Mừng Sinh Nhật</p>
+                </div>
+                <div class="model-body"></div>
+                <p>Cuộc sống muôn màu muôn vẻ, như bảy sắc cầu vồng.Đô chúc Ngân hiền hòa như màu sáp, tươi tắn như màu nước, tiền nhiều như giấy A4 và xinh như thiếu nữ bên hoa huệ.
+                </p>
+                <div class="model-footer">
+                    <button>Close</button>
+                </div>
+            </div>
+        </div>                
+        <script src="app.js"></script>
+</body>
+</html>
